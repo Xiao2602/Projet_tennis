@@ -1,0 +1,35 @@
+- Introduction
+Le projet consiste à faire un programme qui simule un match de tennis à l’aide des fonctions suivantes :
+------------------
+- La fonction Calcul_score 
+C’est une fonction qui va afficher les points. Elle a comme paramètre « point » qui est en Int vu que c’est un entier et le type de retour est en string.
+
+Elle a comme variable score et elle va afficher les points de cette manière :
+Si un joueur a aucun point il va afficher 0 pour lui, s’il marque un point il a 15, pour 2,3 il aura respectivement 30 et 40 et lorsqu’il a 4 cava afficher Avantage.
+------------------
+- La fonction Simulation_jeu
+Cette fonction est sans paramètre et le type de retour est en Int. Elle a comme variable : Joueur1, Joueur2, Choix et sont de type Int.
+Joueur1 permet de donner le score du premier joueur et Joueur2 donne le score du deuxième joueur et pour le choix si le joueur tape 1 le premier joueur aura plus 1 s’il tape 2 le deuxième joueur aura plus 1 s’il tape un chiffre différent il sera affiché « Erreur taper 1 ou 2 ».
+
+Il y a aussi des conditions pour arrêter le jeu si un des joueurs a au moins 40 et 2 points d’avance, il sera affiché le joueur 2 a gagné le jeu. Elles sont aussi accompagnées d’un return 1 et return 2 pour arrêter la répétition.
+Pour faire fonctionner la fonction on a aussi utilisé un For pour faire répéter les actions.
+------------------
+- La fonction Simulation_set
+Cette fonction marche aussi avec un For et le type de retour est aussi en Int. Elle a comme variable Set1 et Set2 pour afficher le nombre de sets gagnés et gagnant qui est lié à l’ancienne fonction si gagnant =1 Set1 va augmenter d’un si gagnant=2 Set2 va augmenter d’un aussi elle a aussi des conditions similaires à la première fonction.
+
+Si le Set d’un des joueurs est au moins égal à 6 et qu’il est supérieur d’au moins de 2 sets avec l’autre la fonction s’arrêtera grâce aux Return 1 et Return 2
+Si les joueurs ont 6 jeux gagnant la fonction TieBreak va se lancer et les points seront plus compter avec 15,30,40 et A mais 1 jusqu’à 7.
+------------------
+- La fonction Simulation_match
+Cette fonction a plusieurs variables, match1 et match 2 qui vont afficher le nombre de matchs gagnés pour les deux joueurs, setmax qui est le nombre de match à gagner pour les hommes c’est 3 pour les femmes 2, nchoix qui va permettre à l’utilisateur de choisir si ça sera un match d’homme ou de femme et ngagnant qui est lié avec la fonction précédente s’il est égal à 1 match1 aura plus 1 et s’il est égale à 2, match 2 aura plus 2.
+
+La fonction va demander de taper homme ou femme si l’utilisateur tape autre chose elle va afficher « Erreur tapez homme ou femme » et l’utilisateur devra taper encore grâce au For elle va redemander de taper homme ou femme jusqu’à qu’il tape un résultat valide.
+Puis dans un For il va augmenter les variables match1 et match 2 en fonction du gagnant dans la fonction précédente et si une des variables match est égale à setmax le joueur aura gagné tout le match.
+------------------
+- La fonction TieBreak
+Si les 2 joueurs ont chacun 6 jeux la fonction TieBreak va se lancer. Elle a comme variable score 1 et score 2 qui va afficher les points des joueurs des joueurs et nchoix qui va permettre à l’utilisateur de taper 1 et 2 et qui va augmenter les points des joueurs et si l’utilisateur tape autre chose il affichera erreur taper 1 ou 2. Dans un For elle va demander qui a gagné et donc ajouter les points des joueurs va la fonction s’arrêtera si l’un des joueurs a au moins 7 points et une différence avec l’autre supérieure ou égale à 2.
+------------------
+- La fonction main
+Pour lancer le programme, on a une fonction main sans variables ni paramètres .
+
+Pour conclure, c’est à l’aide de ces fonctions qu’on va faire marcher notre programme pour simuler un match de tennis.
